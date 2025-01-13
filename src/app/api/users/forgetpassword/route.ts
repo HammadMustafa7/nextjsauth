@@ -60,7 +60,7 @@ export async function POST(request: NextRequest) {
       { success: true, message: "Password reset successfully" },
       { status: 200 }
     );
-  } catch (error : any) {
+  } catch (error :  string | number | boolean | any) {
     // Handle errors
     if (error instanceof Error) {
       console.error("Error resetting password:", error.message);

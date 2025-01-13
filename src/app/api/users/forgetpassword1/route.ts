@@ -31,7 +31,7 @@ export async function POST(request: NextRequest) {
 
         return NextResponse.json({ message: "Email sent successfully" }, { status: 200 });
 
-    } catch (error: any) {
+    } catch (error: string | number | boolean | any) {
         return NextResponse.json({ error: "Something went wrong: " + error.message }, { status: 500 });
     }
 }

@@ -17,7 +17,7 @@ export async function GET(request: NextRequest) {
         });
 
         
-    } catch (error: any) {
+    } catch (error: string | number | boolean | any) {
         return NextResponse.json({
              error: "Something went wrong: " + error.message }, 
              { status: 400 });

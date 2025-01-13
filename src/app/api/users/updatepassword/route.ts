@@ -54,7 +54,7 @@ export async function POST(request: NextRequest) {
         console.log("User password updated successfully");
 
         return NextResponse.json({ message: "Password updated successfully" });
-    } catch (error: any) {
+    } catch (error: string | number | boolean | any) {
         console.error("Error updating password:", error);
         return NextResponse.json(
             { error: "Internal Server Error: " + error.message },

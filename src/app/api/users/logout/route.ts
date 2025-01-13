@@ -12,7 +12,7 @@ export async function GET() {
 
         return responce
         
-    } catch (error: any) {
+    } catch (error: string | number | boolean | any) {
         return NextResponse.json({ error: "Something went wrong: " + error.message }, { status: 500 });
     }
 
