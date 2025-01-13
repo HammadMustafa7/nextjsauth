@@ -13,6 +13,7 @@ export default {
         foreground: "var(--foreground)",
       },
     },
+    darkMode: "class",
   },
   plugins: [],
 } satisfies Config;
