@@ -9,17 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "are-we-there-yet": "^4.0.2",
     "axios": "^1.7.9",
     "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
     "dotenv": "^16.4.7",
+    "gauge": "^5.0.2",
+    "glob": "^9.3.5",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.9.4",
     "next": "15.1.4",
     "nodemailer": "^6.9.16",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-hot-toast": "^2.5.1"
+    "react-hot-toast": "^2.5.1",
+    "rimraf": "^4.4.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
