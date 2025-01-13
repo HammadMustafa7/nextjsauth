@@ -36,12 +36,12 @@ export default function Signup() {
   }
 
   useEffect(() => {
-    if (user.email.length > 0 && user.password.length > 0) {
-      setButtonDisabled(false);
-    } else {
-      setButtonDisabled(true);
-    }
-})
+  if (user.email.length > 0 && user.password.length > 0) {
+    setButtonDisabled(false);
+  } else {
+    setButtonDisabled(true);
+  }
+}, [user.email.length, user.password.length]); // Add dependencies here)
 
   return (
     <div className="flex h-screen flex-col justify-center items-center bg-slate-500 px-4">
